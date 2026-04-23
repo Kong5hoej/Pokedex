@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+import darkball from "../assets/darkball.png";
+import lightball from "../assets/lightball.png";
+
 import "./ThemeToggle.css";
 
 export default function ThemeToggle() {
@@ -26,7 +29,7 @@ export default function ThemeToggle() {
     <button className="themeToggle" onClick={toggleTheme}>
       <div className={`ball ${theme}`}>
         <img
-          src={theme === "light" ? "/lightball.png" : "/darkball.png"}
+          src={theme === "light" ? lightball : darkball}
           alt="theme"
         />
       </div>

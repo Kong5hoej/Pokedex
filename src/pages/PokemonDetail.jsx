@@ -5,6 +5,7 @@ import { typeColors, typeColorsDark } from "../utils/typeColors";
 import PokemonSprite from "../components/PokemonSprite";
 import './PokemonDetail.css';
 import EvolutionChain from "../components/EvolutionChain"; 
+import pokeball from "../assets/pokeball.png";
 
 export default function PokemonDetail({ setNavTitle }) {
   const { name } = useParams();
@@ -193,7 +194,7 @@ useEffect(() => {
       className="loader"
       >
         <img
-          src="/pokeball.png"
+          src={pokeball}
           alt="loading"
           className="spinner"
         />

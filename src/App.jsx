@@ -5,7 +5,6 @@ import PokemonDetail from "./pages/PokemonDetail";
 import Games from "./pages/Games";
 import ThemeToggle from "./components/ThemeToggle";
 import "./App.css";
-
 import WordleGame from "./games/WordleGame";
 import SilhouetteGame from "./games/SilhouetteGame";
 
