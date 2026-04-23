@@ -1,0 +1,60 @@
+.gamesPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  text-align: center;
+  width: 100%;
+}
+
+.gamesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 700px;
+  justify-content: center;
+}
+
+.gameCard {
+  padding: 24px;
+  border-radius: 18px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  text-align: center;
+
+}
+
+.gameCard h2 {
+  margin: 0;
+  color: var(--wordle-text-color);
+}
+
+.gameCard p {
+  margin: 0;
+  color: var(--wordle-text-color);
+  opacity: 0.85;
+  line-height: 1.5;
+}
+
+.gameCard .btn {
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .gamesGrid {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+
+  .gameCard {
+    margin-top: 24px;
+    padding: 0px;
+  }
+}

@@ -1,0 +1,82 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.silhouetteCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.silhouetteImage {
+  width: 220px;
+  image-rendering: pixelated;
+  transition: filter 0.4s ease;
+}
+
+.inputRow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+input {
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--searchbar-border-color);
+  font-size: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  outline: none;
+  text-align: center;
+  background-color: var(--searchbar-color);
+  color: var(--wordle-text-color);
+  transition: background-color 0.4s ease, border 0.4s ease;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  color: var(--pagination-button-color);
+  background: var(--pagination-button-background);
+  border: var(--pagination-button-border);
+  transition: background 0.4s ease, color 0.4s ease, border 0.4s ease;
+}
+
+.btn:hover {
+  transition: 0.2s;
+  color: var(--pagination-button-hover-color);
+  text-shadow: var(--pagination-button-hover-shadow);
+}
+
+.message {
+  font-weight: 600;
+  color: var(--wordle-text-color);
+  opacity: 0.9;
+  text-align: center;
+}
+
+.guessList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+  color: var(--wordle-text-color);
+}
+
+.guessItem {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.loading {
+  text-align: center;
+  color: var(--wordle-text-color);
+}

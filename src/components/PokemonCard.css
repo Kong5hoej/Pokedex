@@ -1,0 +1,54 @@
+.Wrapper {
+  position: relative;
+  height: 120px;
+  transition: transform 0.2s;
+
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.Card {
+  height: 100px; 
+  border-radius: 16px;
+  padding: 16px;
+  color: white;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  transition: background 0.4s ease;
+}
+
+.Image {
+  position: absolute;
+  top: -50px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.ID {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--card-text-color);
+}
+
+.Name {
+  margin: -5px 0 0 0;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--card-text-color);
+}
+
+.Link {
+    text-decoration: none;
+}

@@ -1,0 +1,153 @@
+:root {
+  --pokedex-red: #e3350d;
+  --pokedex-dark-red: #b71c1c;
+  --screen-bg: #1a1f2b;
+  --screen-glow: #00eaff;
+  --screen-text: #d9faff;
+  --text: #2b2b2b;
+  --text-h: #ffffff; 
+  --bg: linear-gradient(180deg, #d6e8f5, #0a8eec54);
+  --border: #c7c7c7;
+  --code-bg: #10151f;
+
+  --accent: var(--pokedex-red);
+  --accent-bg: rgba(227, 53, 13, 0.15);
+  --accent-border: rgba(227, 53, 13, 0.6);
+
+  --shadow:
+    rgba(0, 0, 0, 0.25) 0 12px 20px -4px,
+    rgba(0, 0, 0, 0.2) 0 6px 10px -3px;
+
+  letter-spacing: 0.3px;
+  color: var(--text);
+
+  -webkit-font-smoothing: antialiased;
+
+  --font-main: 'Segoe UI', system-ui, sans-serif;
+
+  --navbar-color: linear-gradient(180deg, #7fe7ff, #3cc7e6);
+  --navbar-border: 3px solid #1b6f8a;
+  --navbar-box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.4),
+    0 4px 10px rgba(0, 0, 0, 0.3);
+  --navbar-text-color: #003b4a;
+  --navbar-text-hover-color: white;
+  --navbar-text-hover-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+
+  --pagination-button-background: linear-gradient(180deg, #7fe7ff, #3cc7e6);
+  --pagination-button-border: 3px solid #1b6f8a;
+  --pagination-button-color: black;
+  --pagination-button-hover-color: white;
+  --pagination-button-hover-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+
+  --searchbar-color: white;
+  --searchbar-text-color: gray;
+  --searchbar-border-color: #ccc ;
+
+  --card-text-color: rgb(0, 0, 0);
+
+  --wordle-text-color: black;
+  --wordle-cell-bg: #d9faff;
+  --wordle-cell-green-color: #22c55e;
+  --wordle-cell-yellow-color: #eab308;
+  --wordle-cell-gray-color: #9ca3af;
+
+  --cell-size: clamp(28px, 8vw, 48px);
+
+  --dark: false;
+}
+
+body {
+  font-family: var(--font-main);
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  
+  transition: background 0.4s ease, border 0.4 ease;
+}
+
+#root {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0px auto;
+  padding: 20px;
+
+  background: var(--pokedex-red);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  border: 6px solid var(--pokedex-dark-red);
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  transition: background 0.4s ease, box-shadow 0.4 ease, border 0.4 ease;
+}
+
+.screen {
+  background: var(--screen-bg);
+  border-radius: 12px;
+  padding: 20px;
+  color: var(--screen-text);
+  box-shadow: inset 0 0 20px rgba(0, 234, 255, 0.25);
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+[data-theme="dark"] {
+  --bg: linear-gradient(180deg, #3a3a3a, #1f1f1f);
+  --text: #ffffff;
+  --text-h: #ffffff;
+  --screen-bg: #02060a;
+
+  --pokedex-red: #8b0000;
+  --pokedex-dark-red: #5a0000;
+
+  --navbar-color: linear-gradient(180deg, #2aa4c4, #1b6f8a);
+  --navbar-border: 3px solid #0e4a5a;
+  --navbar-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.15),
+      0 4px 10px rgba(0, 0, 0, 0.6);
+  --navbar-text-color: #d9faff;
+  --navbar-text-hover-color: white;
+  --navbar-text-hover-shadow: 0 0 8px rgba(0, 234, 255, 1);
+
+  --pagination-button-background: linear-gradient(180deg, #2aa4c4, #1b6f8a);
+  --pagination-button-border: 3px solid #0e4a5a;
+  --pagination-button-color: #d9faff;
+  --pagination-button-hover-color: white;
+  --pagination-button-hover-shadow: 0 0 8px rgba(0, 234, 255, 1);
+
+  --searchbar-color: rgb(158, 158, 158);
+  --searchbar-text-color: white ;
+  --searchbar-border-color: rgba(63, 63, 63, 0.151) ;
+
+  --card-text-color: #d9faff;
+
+  --wordle-text-color: #d9faff;
+  --wordle-cell-bg: #b8c9cc;
+  --wordle-cell-green-color: #258d4b;
+  --wordle-cell-yellow-color: #bb9114;
+  --wordle-cell-gray-color: #8d9199;
+
+  --dark: true;
+}
+
+html {
+  height: 100%;
+  background: var(--bg);
+  background-attachment: fixed;
+}
+
+body {
+  min-height: 100dvh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  #root {
+    padding: 12px;
+    border-width: 4px;
+    border-radius: 16px;
+  }
+}

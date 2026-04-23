@@ -1,0 +1,37 @@
+.Container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+
+.Button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 999px;
+    cursor: pointer;
+    color: var(--pagination-button-color);
+    background: var(--pagination-button-background);
+    border: var(--pagination-button-border);
+    transition: background 0.4s ease, color 0.4s ease, border 0.4 ease;
+  }
+
+.Button:hover {
+  transition: 0.2s;
+  color: var(--pagination-button-hover-color);
+  text-shadow: var(--pagination-button-hover-shadow);
+}
+
+@media (max-width: 768px) {
+  .Container {
+    padding: 0;
+    gap: 10px;
+  }
+
+  .Button {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+  }
+}

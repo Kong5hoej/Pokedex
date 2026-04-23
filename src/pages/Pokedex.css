@@ -1,0 +1,65 @@
+.PokedexLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.SearchContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  }
+
+.Search {
+  margin-bottom: 30px;
+}
+
+.SearchInput { 
+  padding: 12px 16px;
+  width: 300px;
+  border-radius: 12px;
+  border: 1px solid var(--searchbar-border-color);
+  font-size: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  outline: none;
+  text-align: center;
+  background-color: var(--searchbar-color);
+
+  transition: background-color 0.4s ease, border 0.4 ease;
+}
+input::placeholder {
+  color: var(--searchbar-text-color);
+  transition: color 0.4s ease;
+}
+
+.PaginationWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .SearchInput {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .Search {
+  margin-bottom: 50px;
+}
+
+  .SearchContainer {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.SearchError {
+  color: var(--card-text-color);
+  font-weight: 600;
+  margin-top: 10px;
+  text-align: center;
+}

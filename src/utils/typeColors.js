@@ -1,0 +1,41 @@
+export const typeColors = {
+  grass: "#78C850",
+  fire: "#F08030",
+  water: "#6890F0",
+  electric: "#F8D030",
+  bug: "#A8B820",
+  normal: "#A8A878",
+  poison: "#A040A0",
+  ground: "#E0C068",
+  fairy: "#EE99AC",
+  fighting: "#C03028",
+  psychic: "#F85888",
+  rock: "#B8A038",
+  ghost: "#705898",
+  ice: "#98D8D8",
+  dragon: "#7038F8",
+  dark: "#705848",
+  steel: "#B8B8D0",
+  flying: "#A890F0"
+};
+
+export const typeColorsDark = {
+  grass: "#4e8a34",
+  fire: "#b85c1f",
+  water: "#4a6fd1",
+  electric: "#c9a620",
+  bug: "#7a8618",
+  normal: "#7a7a5a",
+  poison: "#6e2e6e",
+  ground: "#b89b50",
+  fairy: "#c97a8a",
+  fighting: "#8f241d",
+  psychic: "#b93e68",
+  rock: "#8c7a2a",
+  ghost: "#4e3f6e",
+  ice: "#6fbcbc",
+  dragon: "#4e28b8",
+  dark: "#4a3a3a",
+  steel: "#8f8fa8",
+  flying: "#7a6fd1"
+};
