@@ -16,23 +16,23 @@ const router = createHashRouter([{
   children: [
     {
       path: "/",
-      element: <Pokedex setNavTitle={setNavTitle} />
+      element: <Pokedex  />
     },
     {
       path: "/pokemon/:name",
-      element: <PokemonDetail setNavTitle={setNavTitle} />
+      element: <PokemonDetail  />
     },
     {
       path: "/games",
-      element: <Games setNavTitle={setNavTitle} />
+      element: <Games  />
     },
     {
       path: "/games/wordle",
-      element: <WordleGame setNavTitle={setNavTitle} />
+      element: <WordleGame  />
     },
     {
       path: "/games/silhouette",
-      element: <SilhouetteGame setNavTitle={setNavTitle} />
+      element: <SilhouetteGame  />
     }
   ]
 }]);
